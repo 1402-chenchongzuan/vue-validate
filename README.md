@@ -13,7 +13,7 @@ npm install vue-va --save
 
 #### 引入
 ```
-import validate from 'vue-va'
+ import validate from 'vue-va'
  Vue.use(validate);
 ```
 
@@ -51,7 +51,7 @@ validate.extend({   扩展rules
 })
 ```
 
-######自带rules：{email, mobile, tel, cardId,  integer}
+###### 自带rules：{email, mobile, tel, cardId,  integer}
 
 
 ####  submit 提交表单触发事件
@@ -74,17 +74,17 @@ validate.extend({   扩展rules
 
 
 ### 参数规范
-#####data-va-raise    更改当前input触发表单验证的方式
+##### data-va-raise    更改当前input触发表单验证的方式
 
-#####data-va-msg      自定义错误说明,若不自定义则采用 `the field ${name} has error`
+##### data-va-msg      自定义错误说明,若不自定义则采用 `the field ${name} has error`
 
-#####v-va.border      是否开启边框
+##### v-va.border      是否开启边框
 
-#####v-va.msg         会在input下方输出data-va-msg的错误说明，若data-va-msg不存在，则使用 `the field ${name} has error`
+##### v-va.msg         会在input下方输出data-va-msg的错误说明，若data-va-msg不存在，则使用 `the field ${name} has error`
 
-#####v-va.disable     关闭空值验证,如不加disable，则默认开启空值验证
+##### v-va.disable     关闭空值验证,如不加disable，则默认开启空值验证
 
-#####data-va-validator   自定义验证规则
+##### data-va-validator   自定义验证规则
 
 例:
 ```
